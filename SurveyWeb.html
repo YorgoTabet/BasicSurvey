@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="heading">
+        <h1 id="title">Metal Survey!</h1>
+        <p id="description"><em>Thanks for taking your time to fill this survey :)</em></p>
+    </header>
+    <div class="mainDiv">
+        <form action="submit" id="survey-form">
+            
+            <label for="name" id="name-label">Enter your full name</label>
+            <input type="text" id="name" placeholder="Write your name" required>
+            <label for="email" id="email-label">Enter your full name</label>
+            <input type="email" id="email" placeholder="Write your name" required>
+            <label for="number" id="number-label">On a scale of 1-10 how much do you like metal?</label>
+            <input type="number" id="number" min="1" max="10" placeholder="rating">
+            <label for="dropdown">Who would you prefer?</label>
+            <select name="select-band" id="dropdown">
+                <option value="Metallica">Metallica</option>
+                <option value="Slayer">Slayer</option>
+                <option value="Slipknot">Slipknot</option>
+            </select>
+            <div id="radio-section">
+              <h3>How long have you been listening to metal for?</h3>
+                <div><input type="radio" name="listening-time" id="radio-years-1" value="0-5">
+                    <label for="radio-years-1">0-5 Years</label></div>
+                <div><input type="radio" name="listening-time" id="radio-years-2" value="6-10">
+                 <label for="radio-years-2">6-10 Years</label></div>
+                <div><input type="radio" name="listening-time" id="radio-years-3" value="11+">
+                 <label for="radio-years-3">11+ Years</label></div>
+            </div>
+            <div id="checkbox-section">
+                <h3>What genres do you listen to?</h3>
+            <div><input type="checkbox" name="listening-genre" id="radio-genre-1" value="Thrash">
+                   <label for="checkbox-genre-1">Thrash</label></div>
+                <div><input type="checkbox" name="listening-genre" id="radio-genre-2" value="Core">
+                   <label for="checkbox-genre-2">Core/Deathcore</label></div>
+                <div><input type="checkbox" name="listening-genre" id="radio-genre-3" value="nu metal">
+                   <label for="checkbox-genre-3">Nu metal</label></div>
+                <div><input type="checkbox" name="listening-genre" id="radio-genre-3" value="Black Metal">
+                   <label for="checkbox-genre-4">Black metal</label></div>
+              <div>
+            <div id="feedback">
+                <h4>Give us your feedback!</h4>
+                <textarea name="feedback" id="text-area-feedback" cols="30" rows="10"></textarea>
+                <button type="submit">submit survey</button>    
+            </div>
+            
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0rem;
+    font-family: 'Metal Mania', cursive;
+    font-size: 100%;
+}
+h1{
+    font-size: 10vw;
+}
+h2{
+    font-size: 2vw;
+}
+label{
+    font: 15vw;
+}
+em{
+    font-size: 1vw;
+}
+header{
+    color: darkred;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+body{
+    background-color: black;
+}
+.mainDiv{
+    background-color: darkred;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:column;
+    width: 75vw;
+    margin: auto;
+    padding: 50px;
+    justify-content: start;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+div{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+label, h3, h4{
+    font-size: 3vw;
+}
+input, select{
+    margin-bottom: 15px;
+    max-width: 75%;
+    height: 3vw;
+    border-radius: 5px;;
+}
+input[type = "radio"], input[type = "checkbox"]{
+    margin: 5px;
+    align-items: center;
+    width: 5vh;
+    border-color: darkred;
+}
+#radio-section, #checkbox-section{
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    width: 50vw;
+    font-size: 2vw;
+}
+#feedback{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+#feedback>button{
+    margin: auto;
+    width: 30vw;
+    font-size: 3vw;
+    margin-top: 15px;
+    border-radius: 15px;
+    
+}
+
+
+ 
